@@ -1,0 +1,71 @@
+.logoTxt {
+	font-size: 2em;
+	padding: 20px;
+	text-align: right;
+}
+
+.logoImg {
+	margin-left: 10px;
+}
+
+.navLink:hover {
+	background: #ccc;
+}
+
+.navItem {
+	text-align:center;
+	color: #FFFFFF;
+	height: 30px;
+	background: #5EE133;
+	margin: 2px;
+}
+
+.banner img {
+	height: 160px;
+}
+
+.banner h1 {
+	font-size: 32px;
+	width: 50%;
+}
+
+/* Map-related CSS */
+.west#arctic {
+	top: 5%;
+	left: 45%;
+}
+
+.west#america {
+	top: 20%;
+	left: 30%;
+}
+
+.west#brazil {
+	top: 40%;
+	left: 38%;
+}
+
+.midd#europe {
+	top: 15%;
+	left: 35%;
+}
+
+.midd#africa {
+	top: 35%;
+	left: 35%;
+}
+
+.east#china {
+	top: 25%;
+	right: 32%;
+}
+
+.east#asia {
+	top: 35%;
+	right: 32%;
+}
+
+.east#antarctica {
+	top: 55%;
+	right: 32%;
+}

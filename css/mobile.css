@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Oswald;
+    src: url(fonts/Oswald-Regular.otf);
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+/*	font-size: 1em;
+	line-height: 1.4em;*/
+	color: #333333;
+	background-color: #F4F4FF;
+} 
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: Oswald, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 2em;
+/*	line-height: 1.8em;*/
+}
+/*	
+h2 {
+	line-height: 1.6em;
+}
+*/
+h1.bg-yellow {
+	padding: 2px;
+	background-color: rgba(255,204,0,0.8);
+}
+
+h1.bg-green {
+	padding: 2px;
+	background-color: rgba(94,255,51,0.9);
+}
+
+h1.bg-purple {
+	padding: 2px;
+	background-color: rgba(255,51,225,0.9);
+}
+
+h1.bg-blue {
+	padding: 2px;
+	background-color: rgba(0,191,255,0.9);
+}
+
+h1.bg-brown {
+	padding: 2px;
+	background-color: rgba(217,109,0,0.9);
+}
+
+header {
+	background-color: #0059B2;
+}
+
+.logoTxt {
+	font-size: 16px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.logoImg {
+	display: block;
+	margin: 0 auto;
+}
+
+.navLink:hover {
+	text-decoration: none;
+}
+
+.navItem {
+	padding: 5px;
+	text-align:center;
+	color: #FFFFFF;
+	height: 30px;
+/*	background: linear-gradient(lightblue, #0059b2);
+	background: linear-gradient(#0059B2, lightblue);*/
+	background: linear-gradient(#0059B2, #00BFFF);
+}
+
+/* Banner (Image and Heading) */
+.banner {
+	position: relative;
+}
+
+.banner img {
+	clear:both;
+	width: 100%;
+	height: 120px;
+}
+
+.banner h1 {
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	width: 80%;
+}
+
+/* Headings */
+.under-yellow {
+	border-bottom:3px solid #ffcc00;
+}
+
+.under-green {
+	border-bottom:3px solid #16e133;
+}
+
+.under-purple {
+	border-bottom:3px solid #e133e1;
+}
+
+.under-blue {
+	border-bottom:3px solid #00bfff;
+}
+
+.under-brown {
+	border-bottom:3px solid #c98c00;
+}
+
+/* Map-related CSS */
+.west {
+	top: 10%;
+	left: 25%;
+}
+
+.midd {
+	top: 5%;
+	left: 20%;
+}
+
+.east {
+	top: 5%;
+	right: 30%;
+}
+
+/* "What Can I Do" Images*/
+.wicd img {
+	display: block;
+	margin: 0 auto;
+	width: 150px;
+}

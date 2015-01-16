@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Interactive map about global warming">
+
+		<title>Interactive Map</title>
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap.theme.min.css">
+		<link rel="stylesheet" href="css/mobile.css">
+		<link rel="stylesheet" media="(min-width: 768px)" href="css/adjustment.css" />
+		<link rel="stylesheet" href="css/map.css">
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<header>
+			<div class="row">
+				<div class="col-md-3">
+					<img class="logoImg" src="img/logo-232.gif" alt="Logo">
+				</div>
+
+				<div class="col-md-9">
+					<h1 class="logoTxt">Make Your World A Smarter Place</h1>
+					<a class="navLink" href="index.html"><div class="col-sm-2 col-sm-offset-1 navItem">Home</div></a>
+					<a class="navLink" href="wigw.html"><div class="col-sm-3 navItem">What is Global Warming</div></a>
+					<a class="navLink" href="wcid.html"><div class="col-sm-2 navItem">What can I do</div></a>
+					<a class="navLink" href="imap.html"><div class="col-sm-2 navItem">Interactive Map</div></a>
+					<a class="navLink" href="fun.html"><div class="col-sm-2 navItem">Fun</div></a>
+				</div>
+			</div>
+		</header>
+
+		<!-- Content -->
+		<div id="mapbox">
+			<img src="img/world-map.png" class="img-responsive" alt="Global Warming World Map" usemap="#worldmap" />
+			<map name="worldmap">
+				<area shape="circle" coords="220,135,15" alt="Coal Burning USA" href="#" item="america" />
+				<area shape="circle" coords="407,35,16" alt="Ice Caps Melting" href="#" item="arctic" />
+				<area shape="circle" coords="332,291,15" alt="Deforestation" href="#" item="brazil" />
+				<area shape="circle" coords="511,106,16" alt="Coal Burning" href="#" item="europe" />
+				<area shape="circle" coords="520,254,16" alt="African Rainforests" href="#" item="africa" />
+				<area shape="circle" coords="746,147,15" alt="Coal Burning" href="#" item="china" />
+				<area shape="circle" coords="739,204,16" alt="Asian Rainforests" href="#" item="asia" />
+				<area shape="circle" coords="670,485,16" alt="Ice Caps Melting" href="#" item="antarctica" />
+			</map>
+
+			<!-- East -->
+			<div id="china" class="display east">
+				<a class="closeX" id="closeX" onclick='$("#china").hide();'>&#10006;</a>
+				<h2 class="infoHeading">China</h2>
+				<hr>
+				<div class="infoContent">
+					<p>Brief Description</p>
+				</div>
+				<hr>
+				<div class="infoContent">
+					<p>Effects</p>
+				</div>
+				<hr>
+				<div class="infoSec"><a href="#">more stuff &#10140;</a></div>
+			</div>
+
+			<div id="asia" class="display east">
+				<a class="closeX" id="closeX" onclick='$("#asia").hide();'>&#10006;</a>
+				<h2 class="infoHeading">Asia</h2>
+				<hr>
+				<div class="infoContent">
+					<p>Brief Description</p>
+				</div>
+				<hr>
+				<div class="infoContent">
+					<p>Effects</p>
+				</div>
+				<div class="infoSec"><a href="#">more stuff &#10140;</a></div>
+			</div>
+
+			<div id="antarctica" class="display east">
+				<a class="closeX" id="closeX" onclick='$("#antarctica").hide();'>&#10006;</a>
+				<h2 class="infoHeading">Antarctica</h2>
+				<hr>
+				<div class="infoContent">
+					<p>Brief Description</p>
+				</div>
+				<hr>
+				<div class="infoContent">
+					<p>Effects</p>
+				</div>
+				<hr>
+				<div class="infoSec"><a href="#">more stuff &#10140;</a></div>
+			</div>
+
+			<!-- West -->
+			<div id="arctic" class="display west">
+				<a class="closeX" id="closeX" onclick='$("#arctic").hide();'>&#10006;</a>
+				<h2 class="infoHeading">Arctic</h2>
+				<hr>
+				<div class="infoContent">
+					<p>Due to global warming, the Arctic Ice Shelves are melting.</p>
+				</div>
+				<hr>
+				<div class="infoContent">
+					<p>Melting ice in the arctic means rising global sea-levels leading to flooding, coastal erosion, and changing migration patterns of animals. Less Arctic ice means a warmer planet Earth. The increased temperature affects weather patterns and farming.</p>
+				</div>
+				<hr>
+				<div class="infoSec"><a href="details-arctic.html">more stuff &#10140;</a></div>
+			</div>
+
+			<div id="america" class="display west">
+				<a class="closeX" id="closeX" onclick='$("#america").hide();'>&#10006;</a>
+				<h2 class="infoHeading">USA</h2>
+				<hr>
+				<div class="infoContent">
+					<p>Brief Description</p>
+				</div>
+				<hr>
+				<div class="infoContent">
+					<p>Effects</p>
+				</div>
+				<hr>
+				<div class="infoSec"><a href="#">more stuff &#10140;</a></div>
+			</div>
+
+			<div id="brazil" class="display west">
+				<a class="closeX" id="closeX" onclick='$("#brazil").hide();'>&#10006;</a>
+				<h2 class="infoHeading">Brazil</h2>
+				<hr>
+				<div class="infoContent">
+					<p>Brief Description</p>
+				</div>
+				<hr>
+				<div class="infoContent">
+					<p>Effects</p>
+				</div>
+				<hr>
+				<div class="infoSec"><a href="#">more stuff &#10140;</a></div>
+			</div>
+
+			<!-- Middle -->
+			<div id="europe" class="display midd">
+				<a class="closeX" id="closeX" onclick='$("#europe").hide();'>&#10006;</a>
+				<h2 class="infoHeading">Europe</h2>
+				<hr>
+				<div class="infoContent">
+					<p>Brief Description</p>
+				</div>
+				<hr>
+				<div class="infoContent">
+					<p>Effects</p>
+				</div>
+				<hr>
+				<div class="infoSec"><a href="#">more stuff &#10140;</a></div>
+			</div>
+
+			<div id="africa" class="display midd">
+				<a class="closeX" id="closeX" onclick='$("#africa").hide();'>&#10006;</a>
+				<h2 class="infoHeading">Africa</h2>
+				<hr>
+				<div class="infoContent">
+					<p>Brief Description</p>
+				</div>
+				<hr>
+				<div class="infoContent">
+					<p>Effects</p>
+				</div>
+				<hr>
+				<div class="infoSec"><a href="#">more stuff &#10140;</a></div>
+			</div>
+		</div>
+
+		<footer>
+			<p>&copy; Team Revolve 2015</p>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
+		<script>
+		$(document).ready(function(e) {
+			$('img[usemap]').rwdImageMaps();
+		});
+
+		$('[item]').click(function(){
+			var item=$(this).attr('item');
+			$(".display").hide();
+			$("#"+item).show();
+			return false;
+		});
+		</script>
+	</body>
+</html>
