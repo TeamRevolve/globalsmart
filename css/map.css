@@ -1,6 +1,7 @@
 /* Map-related CSS */
 div#mapbox {
 	position: relative;
+	margin-top: 20px;
 }
 
 img[usemap] {
