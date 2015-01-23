@@ -199,6 +199,11 @@ nav li a:hover {
 	width: 80%;
 }
 
+/* Footer */
+footer {
+	text-align: center;
+}
+
 /* Map-related CSS */
 .west {
 	top: 10%;
