@@ -43,147 +43,162 @@
 		</header>
 
 		<!-- Content -->
-		<div id="mapbox">
-			<img src="img/world-map.png" class="img-responsive" alt="Global Warming World Map" usemap="#worldmap" />
-			<map name="worldmap">
-				<area shape="circle" coords="220,135,15" alt="Coal Burning USA" href="#" item="america" />
-				<area shape="circle" coords="407,35,16" alt="Ice Caps Melting" href="#" item="arctic" />
-				<area shape="circle" coords="332,291,15" alt="Deforestation" href="#" item="brazil" />
-				<area shape="circle" coords="511,106,16" alt="Coal Burning" href="#" item="europe" />
-				<area shape="circle" coords="520,254,16" alt="African Rainforests" href="#" item="africa" />
-				<area shape="circle" coords="746,147,15" alt="Coal Burning" href="#" item="china" />
-				<area shape="circle" coords="739,204,16" alt="Asian Rainforests" href="#" item="asia" />
-				<area shape="circle" coords="670,485,16" alt="Ice Caps Melting" href="#" item="antarctica" />
-			</map>
-
-			<!-- East -->
-			<div id="china" class="display east">
-				<a class="closeX" id="closeX" onclick='$("#china").hide();'>&#10006;</a>
-				<h2 class="infoHeading">China</h2>
-				<hr>
-				<div class="infoContent">
-					<p>China has become the largest national source of annual greenhouse gas emissions.</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<h1><span class="under-yellow">Welcome to Global Smart</span></h1>
+					<p>The map shows the world's largest global warming hotspots. Click a Hotspot Topic to Learn More About Each Region.</p>
 				</div>
-				<hr>
-				<div class="infoContent">
-					<p>China has been reliant on coal for many decades. It must develop ways to utilize coal more efficiently and more cleanly.</p>
-				</div>
-				<hr>
-				<div class="infoSec"><a href="details-china.html">more stuff &#10140;</a></div>
 			</div>
 
-			<div id="asia" class="display east">
-				<a class="closeX" id="closeX" onclick='$("#asia").hide();'>&#10006;</a>
-				<h2 class="infoHeading">Asia</h2>
-				<hr>
-				<div class="infoContent">
-					<p>Brief Description</p>
-				</div>
-				<hr>
-				<div class="infoContent">
-					<p>Effects</p>
-				</div>
-				<hr>
-				<div class="infoSec"><a href="details-asia.html">more stuff &#10140;</a></div>
-			</div>
+			<div class="row">
+				<div id="mapbox">
+					<img src="img/world-map.png" class="img-responsive" title="Click a Hotspot Topic to Learn More About Each Region." alt="Global Warming World Map" usemap="#worldmap" />
+					<map name="worldmap">
+						<area shape="circle" coords="397,85,25" alt="Ice Caps Melting" href="#" item="arctic" />
+						<area shape="circle" coords="210,185,23" alt="Coal Burning USA" href="#" item="america" />
+						<area shape="circle" coords="322,343,23" alt="Deforestation" href="#" item="brazil" />
+						<area shape="circle" coords="501,156,23" alt="Coal Burning" href="#" item="europe" />
+						<area shape="circle" coords="511,305,22" alt="African Rainforests" href="#" item="africa" />
+						<area shape="circle" coords="661,537,22" alt="Ice Caps Melting" href="#" item="antarctica" />
+						<area shape="circle" coords="730,256,25" alt="Asian Rainforests" href="#" item="asia" />
+						<area shape="circle" coords="736,197,24" alt="Coal Burning" href="#" item="china" />
+					</map>
 
-			<div id="antarctica" class="display east">
-				<a class="closeX" id="closeX" onclick='$("#antarctica").hide();'>&#10006;</a>
-				<h2 class="infoHeading">Antarctica</h2>
-				<hr>
-				<div class="infoContent">
-					<p>Brief Description</p>
-				</div>
-				<hr>
-				<div class="infoContent">
-					<p>Effects</p>
-				</div>
-				<hr>
-				<div class="infoSec"><a href="details-antarctica.html">more stuff &#10140;</a></div>
-			</div>
+					<!-- East -->
+					<div id="china" class="display east">
+						<a class="closeX" id="closeX" onclick='$("#china").hide();'>&#10006;</a>
+						<h2 class="infoHeading">China</h2>
+						<hr>
+						<div class="infoContent">
+							<p>China has become the largest national source of annual greenhouse gas emissions.</p>
+						</div>
+						<hr>
+						<div class="infoContent">
+							<p>China has been reliant on coal for many decades. It must develop ways to utilize coal more efficiently and more cleanly.</p>
+						</div>
+						<hr>
+						<div class="infoSec"><a href="details-china.html">more stuff &#10140;</a></div>
+					</div>
 
-			<!-- West -->
-			<div id="arctic" class="display west">
-				<a class="closeX" id="closeX" onclick='$("#arctic").hide();'>&#10006;</a>
-				<h2 class="infoHeading">Arctic</h2>
-				<hr>
-				<div class="infoContent">
-					<p>Due to global warming, the Arctic Ice Shelves are melting.</p>
-				</div>
-				<hr>
-				<div class="infoContent">
-					<p>Melting ice in the arctic means rising global sea-levels leading to flooding, coastal erosion, and changing migration patterns of animals. Less Arctic ice means a warmer planet Earth. The increased temperature affects weather patterns and farming.</p>
-				</div>
-				<hr>
-				<div class="infoSec"><a href="details-arctic.html">more stuff &#10140;</a></div>
-			</div>
+					<div id="asia" class="display east">
+						<a class="closeX" id="closeX" onclick='$("#asia").hide();'>&#10006;</a>
+						<h2 class="infoHeading">Asia</h2>
+						<hr>
+						<div class="infoContent">
+							<p>Brief Description</p>
+						</div>
+						<hr>
+						<div class="infoContent">
+							<p>Effects</p>
+						</div>
+						<hr>
+						<div class="infoSec"><a href="details-asia.html">more stuff &#10140;</a></div>
+					</div>
 
-			<div id="america" class="display west">
-				<a class="closeX" id="closeX" onclick='$("#america").hide();'>&#10006;</a>
-				<h2 class="infoHeading">USA</h2>
-				<hr>
-				<div class="infoContent">
-					<p>Brief Description</p>
-				</div>
-				<hr>
-				<div class="infoContent">
-					<p>Effects</p>
-				</div>
-				<hr>
-				<div class="infoSec"><a href="details-america.html">more stuff &#10140;</a></div>
-			</div>
+					<div id="antarctica" class="display east">
+						<a class="closeX" id="closeX" onclick='$("#antarctica").hide();'>&#10006;</a>
+						<h2 class="infoHeading">Antarctica</h2>
+						<hr>
+						<div class="infoContent">
+							<p>Brief Description</p>
+						</div>
+						<hr>
+						<div class="infoContent">
+							<p>Effects</p>
+						</div>
+						<hr>
+						<div class="infoSec"><a href="details-antarctica.html">more stuff &#10140;</a></div>
+					</div>
 
-			<div id="brazil" class="display west">
-				<a class="closeX" id="closeX" onclick='$("#brazil").hide();'>&#10006;</a>
-				<h2 class="infoHeading">Brazil</h2>
-				<hr>
-				<div class="infoContent">
-					<p>Deforestation is the permanent destruction of forests in order to make the land available for other uses.</p>
-				</div>
-				<hr>
-				<div class="infoContent">
-					<p>Deforestation is typically done to make more land available for housing and urbanization, timber, large scale cash crops such as soy and palm oil, and cattle ranching.</p>
-				</div>
-				<hr>
-				<div class="infoSec"><a href="details-brazil.html">more stuff &#10140;</a></div>
-			</div>
+					<!-- West -->
+					<div id="arctic" class="display west">
+						<a class="closeX" id="closeX" onclick='$("#arctic").hide();'>&#10006;</a>
+						<h2 class="infoHeading">Arctic</h2>
+						<hr>
+						<div class="infoContent">
+							<p>Due to global warming, the Arctic Ice Shelves are melting.</p>
+						</div>
+						<hr>
+						<div class="infoContent">
+							<p>Melting ice in the arctic means rising global sea-levels leading to flooding, coastal erosion, and changing migration patterns of animals. Less Arctic ice means a warmer planet Earth. The increased temperature affects weather patterns and farming.</p>
+						</div>
+						<hr>
+						<div class="infoSec"><a href="details-arctic.html">more stuff &#10140;</a></div>
+					</div>
 
-			<!-- Middle -->
-			<div id="europe" class="display midd">
-				<a class="closeX" id="closeX" onclick='$("#europe").hide();'>&#10006;</a>
-				<h2 class="infoHeading">Europe</h2>
-				<hr>
-				<div class="infoContent">
-					<p>Brief Description</p>
-				</div>
-				<hr>
-				<div class="infoContent">
-					<p>Effects</p>
-				</div>
-				<hr>
-				<div class="infoSec"><a href="details-europe.html">more stuff &#10140;</a></div>
-			</div>
+					<div id="america" class="display west">
+						<a class="closeX" id="closeX" onclick='$("#america").hide();'>&#10006;</a>
+						<h2 class="infoHeading">USA</h2>
+						<hr>
+						<div class="infoContent">
+							<p>Brief Description</p>
+						</div>
+						<hr>
+						<div class="infoContent">
+							<p>Effects</p>
+						</div>
+						<hr>
+						<div class="infoSec"><a href="details-america.html">more stuff &#10140;</a></div>
+					</div>
 
-			<div id="africa" class="display midd">
-				<a class="closeX" id="closeX" onclick='$("#africa").hide();'>&#10006;</a>
-				<h2 class="infoHeading">Africa</h2>
-				<hr>
-				<div class="infoContent">
-					<p>Brief Description</p>
+					<div id="brazil" class="display west">
+						<a class="closeX" id="closeX" onclick='$("#brazil").hide();'>&#10006;</a>
+						<h2 class="infoHeading">Brazil</h2>
+						<hr>
+						<div class="infoContent">
+							<p>Deforestation is the permanent destruction of forests in order to make the land available for other uses.</p>
+						</div>
+						<hr>
+						<div class="infoContent">
+							<p>Deforestation is typically done to make more land available for housing and urbanization, timber, large scale cash crops such as soy and palm oil, and cattle ranching.</p>
+						</div>
+						<hr>
+						<div class="infoSec"><a href="details-brazil.html">more stuff &#10140;</a></div>
+					</div>
+
+					<!-- Middle -->
+					<div id="europe" class="display midd">
+						<a class="closeX" id="closeX" onclick='$("#europe").hide();'>&#10006;</a>
+						<h2 class="infoHeading">Europe</h2>
+						<hr>
+						<div class="infoContent">
+							<p>Brief Description</p>
+						</div>
+						<hr>
+						<div class="infoContent">
+							<p>Effects</p>
+						</div>
+						<hr>
+						<div class="infoSec"><a href="details-europe.html">more stuff &#10140;</a></div>
+					</div>
+
+					<div id="africa" class="display midd">
+						<a class="closeX" id="closeX" onclick='$("#africa").hide();'>&#10006;</a>
+						<h2 class="infoHeading">Africa</h2>
+						<hr>
+						<div class="infoContent">
+							<p>Brief Description</p>
+						</div>
+						<hr>
+						<div class="infoContent">
+							<p>Effects</p>
+						</div>
+						<hr>
+						<div class="infoSec"><a href="details-africa.html">more stuff &#10140;</a></div>
+					</div>
 				</div>
-				<hr>
-				<div class="infoContent">
-					<p>Effects</p>
-				</div>
-				<hr>
-				<div class="infoSec"><a href="details-africa.html">more stuff &#10140;</a></div>
 			</div>
 		</div>
 
 		<!-- Footer -->
-		<footer>
-			<p>&copy; Team Revolve 2015</p>
-		</footer>
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+				<footer>
+					<p>&copy; Team Revolve 2015</p>
+				</footer>
+			</div>
+		</div>
 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
