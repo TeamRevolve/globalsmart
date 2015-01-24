@@ -212,3 +212,10 @@ footer {
 	top: 5%;
 	right: 30%;
 }
+
+/* "What Can I Do" progress bar */
+.progress-holder {
+	background: linear-gradient(#ccc, #999);
+	border-radius: 5px;
+	padding: 10px 10px 1px 10px;
+}
